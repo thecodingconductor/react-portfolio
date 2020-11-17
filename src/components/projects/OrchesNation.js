@@ -17,10 +17,10 @@ const OrchesNation = () => {
                         <p>Full MERN Stack Application CRM for the Orchestra Industry</p>
                         <div className="d-flex flex-column align-items-center justify-content-between button-container">
 
-                            <a href="http://www.marsroverphotos.com">
+                            <a href="https://limitless-journey-04009.herokuapp.com/">
                                 <Button className="visit-site-button">Visit Site</Button>
                             </a>
-                            <a href="https://github.com/thecodingconductor/mars_rover_webpack">
+                            <a href="https://github.com/thecodingconductor/peopleBook">
                                 <Button className="visit-code-button">Visit Code</Button>
                             </a>
 
@@ -31,9 +31,9 @@ const OrchesNation = () => {
                         <img src={marsRoverHome} alt="Mars Rover Home" className="project-image-main" />
                         <div className="image-spacer"></div>
                         <h2 className="Key Feature">Key Features</h2>
-                        <p className="feature">Feature 1</p>
-                        <p className="feature">Feature 2</p>
-                        <p className="feature">Feature 3</p>
+                        <p className="feature">React Hooks</p>
+                        <p className="feature">ExpressJS, MongoDB</p>
+                        <p className="feature">REST API's</p>
                         <img src={marsRoverFavorites} alt="Mars Rover Favorites" className="project-image-bottom" />
 
                     </Container>

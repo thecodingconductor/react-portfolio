@@ -17,10 +17,10 @@ const ConcertBuilder = () => {
                         <p>Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.</p>
                         <div className="d-flex flex-column align-items-center justify-content-between button-container">
 
-                            <a href="http://www.marsroverphotos.com">
+                            <a href="http://www.concertbuilder.com">
                                 <Button className="visit-site-button">Visit Site</Button>
                             </a>
-                            <a href="https://github.com/thecodingconductor/mars_rover_webpack">
+                            <a href="https://github.com/thecodingconductor/concert-builder-rebuild">
                                 <Button className="visit-code-button">Visit Code</Button>
                             </a>
 
@@ -31,9 +31,9 @@ const ConcertBuilder = () => {
                         <img src={marsRoverHome} alt="Mars Rover Home" className="project-image-main" />
                         <div className="image-spacer"></div>
                         <h2 className="Key Feature">Key Features</h2>
-                        <p className="feature">Feature 1</p>
-                        <p className="feature">Feature 2</p>
-                        <p className="feature">Feature 3</p>
+                        <p className="feature">Vanilla Javascript</p>
+                        <p className="feature">CSS, HTML</p>
+                        <p className="feature">Flask</p>
                         <img src={marsRoverFavorites} alt="Mars Rover Favorites" className="project-image-bottom" />
 
                     </Container>
