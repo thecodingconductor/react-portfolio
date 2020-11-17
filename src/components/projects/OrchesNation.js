@@ -1,8 +1,8 @@
 import React, { Fragment, useContext } from 'react';
 import ProjectContext from '../../context/projects/projectContext';
 import { Container, Button } from 'react-bootstrap';
-import marsRoverHome from '../images/marsRoverHome.png';
-import marsRoverFavorites from '../images/marsRoverFavorites.png';
+import orchesNationHome from '../images/orchesNationHome.png';
+import orgContacts from '../images/orgContacts.png';
 
 const OrchesNation = () => {
 
@@ -28,13 +28,13 @@ const OrchesNation = () => {
 
                     </Container>
                     <Container className="project-middle-container" fluid>
-                        <img src={marsRoverHome} alt="Mars Rover Home" className="project-image-main" />
+                        <img src={orchesNationHome} alt="Mars Rover Home" className="project-image-main" />
                         <div className="image-spacer"></div>
                         <h2 className="Key Feature">Key Features</h2>
                         <p className="feature">React Hooks</p>
                         <p className="feature">ExpressJS, MongoDB</p>
                         <p className="feature">REST API's</p>
-                        <img src={marsRoverFavorites} alt="Mars Rover Favorites" className="project-image-bottom" />
+                        <img src={orgContacts} alt="Mars Rover Favorites" className="project-image-bottom" />
 
                     </Container>
                     <Container className="project-bottom-container" fluid>

@@ -11,6 +11,10 @@ const Projects = () => {
     const projectContext = useContext(ProjectContext);
     const { orchesNation, marsRover, concertBuilder } = projectContext;
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
 
 
     return (

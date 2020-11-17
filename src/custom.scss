@@ -203,6 +203,64 @@ h1 {
     }
 }
 
+// About Page
+
+.about-page-upper-container, .about-page-middle-container {
+
+    margin-top: 2rem;
+
+    h1 {
+        text-align: left;
+    }
+
+    
+
+    .image-container {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 150px);
+        margin-top: 1rem;
+    
+    
+        img {
+            height: 6rem;
+            width: 6rem;
+        }
+    }
+
+    .whats-next-title {
+        // font-size: 1.7rem;
+    }
+
+    .whats-next-container {
+        grid-template-columns: repeat(4, minmax(50px, 1fr));
+        grid-template-rows: auto;
+
+        img {
+            height: 4rem;
+            width: 4rem;
+        }
+    }
+
+}
+
+.about-me-text-container {
+   
+    margin-top: 2rem;
+    h1 {
+        text-align: left
+    }
+
+    p {
+        text-align: left;
+        font-size: .9rem;
+    }
+}
+
+
+
+
 // Footer
 .footer {
     margin-top: 5rem;
