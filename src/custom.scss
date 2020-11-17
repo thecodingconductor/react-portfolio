@@ -1,0 +1,137 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+
+
+
+ $blue-main: #060D87;
+$nanum-gothic: 'Nanum Gothic', sans-serif;
+
+body {
+    font-family: $nanum-gothic;
+    height: 100%;
+}
+
+h1 {
+    color: $blue-main;
+}
+
+//Navbar
+.navbar-main {
+    background-color: $blue-main;
+    height: 4rem;
+}
+
+.mobile-menu-icon {
+    color: #fff;
+}
+
+.nav-modal-container {
+    left: 0;
+    right: 0;
+    background-color: $blue-main;
+
+    .nav-modal-links-container {
+        a {
+            margin: .5rem auto;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+// Homepage
+.website-title-container {
+    margin-top: 3rem;
+    padding: 0;
+    .tristan-headshot {
+        margin-top: 3rem;
+        height: 300px;
+        width: 200px;
+        margin-bottom: 5rem;
+    }
+
+    .website-title {
+        font-size: 2rem;
+    }
+}
+
+.project-container {
+    padding: 0;
+    margin-top: 2rem;
+    
+    .project-showcase-title {
+        text-align: left;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.mars-rover-photo {
+    width: 100%;
+    height: 10rem;
+}
+
+
+
+// Footer
+.footer {
+    margin-top: 5rem;
+    width: 100%;
+    height: 10rem;
+    background-color: $blue-main;
+}
+
+.footer-header-text {
+    color: #fff;
+}
+
+.copyright-info {
+    color: #fff;
+}
