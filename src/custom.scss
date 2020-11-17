@@ -58,6 +58,10 @@ h1 {
     color: $blue-main;
 }
 
+.main-application-container {
+    padding: 0;
+}
+
 //Navbar
 .navbar-main {
     background-color: $blue-main;
@@ -119,7 +123,77 @@ h1 {
     height: 10rem;
 }
 
+// Projects
 
+.project-top-container {
+    background-color: $blue-main;
+    height: 25rem;
+
+    h1 {
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+    }
+}
+
+.button-container {
+    button {
+        width: 80%;
+        height: 3rem;
+        outline: 0;
+        border: none;
+        margin: 1rem auto;
+    }
+}
+
+.visit-site-button {
+    background-color: #CB8423;
+}
+
+.visit-code-button {
+    background-color: #0B9D96;
+}
+
+
+.project-middle-container {
+
+    position: relative;
+
+    .project-image-main {
+
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 92%; 
+        
+    }
+
+    .image-spacer {
+        height: 7rem;
+    }
+
+    img {
+        width: 100%;
+    }
+    h2, p {
+        text-align: left;
+        color: $blue-main
+    }
+
+    .project-image-bottom {
+        margin-top: 2rem;
+    }
+}
+
+.project-bottom-container {
+    h2, h4 {
+        color: $blue-main;
+        text-align: left;
+    }
+}
 
 // Footer
 .footer {
