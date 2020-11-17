@@ -5,26 +5,32 @@ import Spinner from './components/layout/Spinner';
 import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
+import Projects from './components/pages/Projects';
 import NavState from './context/nav/NavState';
+import ProjectState from './context/projects/ProjectState';
 
 const App = () => {
   return (
-    <NavState>
-      <Router>
-        <div className="App">
-          <Navbar />
-          <div className="container">
-            {/* <Spinner /> */}
-            {/* <h1>Portfolio</h1> */}
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-            </Switch>
+
+    <ProjectState>
+      <NavState>
+        <Router>
+          <div className="App">
+            <Navbar />
+            <div className="container">
+              {/* <Spinner /> */}
+              {/* <h1>Portfolio</h1> */}
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/projects" component={Projects} />
+                <Route exact path="/about" component={About} />
+              </Switch>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
-      </Router>
-    </NavState>
+        </Router>
+      </NavState>
+    </ProjectState>
 
 
   );

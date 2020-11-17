@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { Fragment, useContext } from 'react';
+import ProjectContext from '../../context/projects/projectContext';
 
 const MarsRover = () => {
-    return (
-        <div>
 
-        </div>
+    const projectContext = useContext(ProjectContext);
+    const { orchesNation, marsRover, concertBuilder } = projectContext;
+
+
+
+    return (
+        <Fragment>
+            {marsRover ? <h1>Mars Rover</h1> : ''}
+        </Fragment>
     )
 }
 

@@ -1,18 +1,36 @@
 import React, { Fragment, useContext } from 'react';
 import NavContext from '../../context/nav/navContext';
+import ProjectContext from '../../context/projects/projectContext';
 import { Link } from 'react-router-dom';
 
 
 const NavModal = () => {
 
     const navContext = useContext(NavContext);
+    const projectContext = useContext(ProjectContext);
+    const { openConcertBuilder, openOrchesNation, openMarsRover } = projectContext;
+    const { showModalFunc, hideModalFunc, showModal } = navContext;
+
+    const onClick = e => {
+        hideModalFunc();
+        if (e.target.textContent === 'Concert Builder') {
+            openConcertBuilder();
+        } else if (e.target.textContent === 'OrchesNation') {
+            openOrchesNation();
+        } else if (e.target.textContent === 'Mars Rover') {
+            openMarsRover();
+        }
+
+    }
+
 
     const links = (
         <Fragment>
-            <Link to="/projects">Concert Builder</Link>
-            <Link to="/projects">OrchesNation</Link>
-            <Link to="/projects">Mars Rover</Link>
-            <Link to="/about">About</Link>
+            <Link to='/' onClick={onClick}> Home</Link>
+            <Link to="/projects" onClick={onClick}>Concert Builder</Link>
+            <Link to="/projects" onClick={onClick}>OrchesNation</Link>
+            <Link to="/projects" onClick={onClick}>Mars Rover</Link>
+            <Link to="/about" onClick={onClick}>About</Link>
         </Fragment>
     )
 
