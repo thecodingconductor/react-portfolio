@@ -60,6 +60,13 @@ h1 {
 
 .main-application-container {
     padding: 0;
+    margin: 0;
+
+    @include md {
+        width: 100%;
+        max-width: none !important;
+    }
+    
 }
 
 //Navbar
@@ -117,6 +124,12 @@ h1 {
     margin-top: 2rem;
     width: 100%;
     height: auto;
+
+    @include md {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: none;
+    }
     
     .project-showcase-title {
         text-align: left;
@@ -188,15 +201,23 @@ h1 {
     .project-image-main {
 
         position: absolute;
-        top: -20%;
+        top: -10%;
         left: 50%;
         transform: translateX(-50%);
         width: 92%; 
+
+        @include md {
+            width: 96%;
+        }
         
     }
 
     .image-spacer {
         height: 7rem;
+
+        @include md {
+            height: 20rem;
+        }
     }
 
     img {
@@ -239,11 +260,16 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 150px);
         margin-top: 1rem;
+
+        @include md {
+            margin-top: 2rem;
+        }
     
     
         img {
             height: 6rem;
             width: 6rem;
+            object-fit: fill;
         }
     }
 
