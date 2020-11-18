@@ -93,6 +93,7 @@ h1 {
 .website-title-container {
     margin-top: 3rem;
     padding: 0;
+
     .tristan-headshot {
         margin-top: 3rem;
         height: 300px;
@@ -105,9 +106,17 @@ h1 {
     }
 }
 
+.projects-showcase-container {
+    a {
+        text-decoration: none;
+    }
+}
+
 .project-container {
     padding: 0;
     margin-top: 2rem;
+    width: 100%;
+    height: auto;
     
     .project-showcase-title {
         text-align: left;
@@ -115,6 +124,8 @@ h1 {
 
     img {
         width: 100%;
+        height: 100%;
+        object-fit: fill;
     }
 }
 
@@ -143,13 +154,18 @@ h1 {
     a {
         text-decoration: none;
         width: 80%;
+        font-family: $nanum-gothic;
+       
 
         button {
+            font-family: $nanum-gothic;
             width: 100%;
             height: 3rem;
             outline: 0;
             border: none;
             margin: 1rem auto;
+            font-weight: 800;
+           
         }
     }
 
@@ -197,6 +213,8 @@ h1 {
 }
 
 .project-bottom-container {
+    margin-top: 2rem;
+
     h2, h4 {
         color: $blue-main;
         text-align: left;

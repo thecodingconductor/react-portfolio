@@ -1,15 +1,17 @@
 import React, { Fragment, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import ProjectContext from '../../context/projects/projectContext';
 import { Container, Button } from 'react-bootstrap';
 import marsRoverHome from '../images/marsRoverHome.png';
 import marsRoverFavorites from '../images/marsRoverFavorites.png';
 import concertBuilderHome from '../images/concertbuilderhome.png';
 import concertBuilderPage from '../images/concertbuilderpage.png';
+import orchesNationHome from '../images/orchesNationHome.png';
 
 const ConcertBuilder = () => {
 
     const projectContext = useContext(ProjectContext);
-    const { orchesNation, marsRover, concertBuilder } = projectContext;
+    const { orchesNation, marsRover, concertBuilder, openOrchesNation } = projectContext;
     return (
         <Fragment>
             {concertBuilder ?
@@ -41,8 +43,14 @@ const ConcertBuilder = () => {
                     </Container>
                     <Container className="project-bottom-container" fluid>
                         <h2>Next Project</h2>
-                        <h4>Concert Builder</h4>
 
+
+                        <Link to="/projects">
+                            <Container className="project-container" onClick={() => openOrchesNation()}>
+                                <h1 className="project-showcase-title">OrchesNation</h1>
+                                <img src={orchesNationHome} alt="Mars Rover Home" className="mars-rover-photo" />
+                            </Container>
+                        </Link>
                     </Container>
                 </Fragment>
 

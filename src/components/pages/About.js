@@ -49,19 +49,19 @@ const About = () => {
                 <div className="image-container whats-next-container">
                     <figure>
                         <img src={react} alt="" />
-                        <figcaption>HTML 5</figcaption>
+                        <figcaption>React</figcaption>
                     </figure>
                     <figure>
                         <img src={expressjs} alt="" />
-                        <figcaption>CSS 3</figcaption>
+                        <figcaption>ExpressJS</figcaption>
                     </figure>
                     <figure>
                         <img src={nodeJS} alt="" />
-                        <figcaption>Javascript</figcaption>
+                        <figcaption>NodeJS</figcaption>
                     </figure>
                     <figure>
                         <img src={mongoDB} alt="" />
-                        <figcaption>Javascript</figcaption>
+                        <figcaption>MongoDB</figcaption>
                     </figure>
 
                 </div>
