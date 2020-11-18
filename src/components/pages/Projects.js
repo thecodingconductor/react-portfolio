@@ -22,7 +22,7 @@ const Projects = () => {
             <OrchesNation />
             <MarsRover />
             <ConcertBuilder />
-            <ProjectContainer projectName={orchesNation ? orchesNation : marsRover} />
+            {/* <ProjectContainer projectName={orchesNation ? orchesNation : marsRover} /> */}
         </Fragment>
     )
 

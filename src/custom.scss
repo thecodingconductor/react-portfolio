@@ -70,13 +70,80 @@ h1 {
 }
 
 //Navbar
+
+
 .navbar-main {
     background-color: $blue-main;
     height: 4rem;
+
+    @include lg {
+        background-color: #fff;
+    }
+
+    .nav-bar-large {
+        display: none;
+
+        @include lg {
+            display: flex;
+            width: 100%;
+        }
+
+        .links-right {
+
+            width: 10rem; 
+
+            .nav-link-list {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $blue-main;
+                    }
+                }
+            }
+        }
+
+        .icon-left {
+            border-radius: 50%;
+            border: 2px solid #DDDDDD;
+            height: 37px;
+            width: 37px;
+            cursor: pointer;
+        }
+    }
+}
+
+.projects-page-nav {
+    @include lg {
+        background-color: $blue-main;
+    }
+
+    .nav-bar-large {
+        .links-right {
+            .nav-link-list {
+                li {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    a {
+        color: #fff;
+    }
 }
 
 .mobile-menu-icon {
     color: #fff;
+
+    @include lg {
+        display: none;
+    }
 }
 
 .nav-modal-container {
@@ -153,6 +220,10 @@ h1 {
     background-color: $blue-main;
     height: 25rem;
 
+    @include lg{
+        padding-top: 5rem;
+    }
+
     h1 {
         color: #fff;
     }
@@ -209,6 +280,10 @@ h1 {
         @include md {
             width: 96%;
         }
+
+        @include lg {
+            width: 80%;
+        }
         
     }
 
@@ -217,6 +292,10 @@ h1 {
 
         @include md {
             height: 20rem;
+        }
+
+        @include lg {
+            height: 40rem;
         }
     }
 
@@ -242,6 +321,49 @@ h1 {
     }
 }
 
+.inner {
+    @include lg {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .button-container {
+        @include lg {
+            width: 50%;
+        }
+    }
+
+    .text-container {
+        @include lg {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+    }
+}
+
+.inner-middle {
+    @include lg {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+.inner-bottom {
+
+    @include lg {
+        margin: auto;
+        width: 80%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
 // About Page
 
 .about-page-upper-container, .about-page-middle-container {
