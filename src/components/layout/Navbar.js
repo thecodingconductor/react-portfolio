@@ -28,14 +28,18 @@ const Navbar = ({ title, icon }) => {
         }
     }
 
+    const openHome = () => {
+        window.location = '/';
+    }
+
     return (
         <Fragment>
             <ReactNavbar className={`d-flex align-items-center justify-content-center navbar-main ${pathname === '/projects' && 'projects-page-nav'}`}>
                 <i className="fas fa-bars fa-2x mobile-menu-icon" onClick={onClick}></i>
                 <Container className="large-nav-container">
                     <div className={`d-flex justify-content-between align-items-center nav-bar-large `}>
-                        <div className="icon-left">
-                            <Link to="/"></Link>
+                        <div className="icon-left" onClick={openHome}>
+                            {/* <Link to="/"></Link> */}
                         </div>
                         <div className="links-right">
                             <ul className="d-flex align-items-center justify-content-between nav-link-list">

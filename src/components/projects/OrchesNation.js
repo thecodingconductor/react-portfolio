@@ -27,10 +27,10 @@ const OrchesNation = () => {
                             </div>
                             <div className="d-flex flex-column align-items-center justify-content-between button-container">
 
-                                <a href="https://limitless-journey-04009.herokuapp.com/">
+                                <a href="https://limitless-journey-04009.herokuapp.com/" target="_blank">
                                     <Button className="visit-site-button">Visit Site</Button>
                                 </a>
-                                <a href="https://github.com/thecodingconductor/peopleBook">
+                                <a href="https://github.com/thecodingconductor/peopleBook" target="_blank">
                                     <Button className="visit-code-button">Visit Code</Button>
                                 </a>
 

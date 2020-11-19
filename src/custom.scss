@@ -300,18 +300,21 @@ h1 {
             border: none;
             margin: 1rem auto;
             font-weight: 800;
-           
         }
+
+
     }
 
     
 }
 
-.visit-site-button {
+.visit-site-button, .visit-site-button:hover, .visit-site-button:active {
     background-color: #CB8423;
 }
 
-.visit-code-button {
+
+
+.visit-code-button, .visit-code-button:hover, .visit-code-button:active {
     background-color: #0B9D96;
 }
 
@@ -323,7 +326,7 @@ h1 {
     .project-image-main {
 
         position: absolute;
-        top: -10%;
+        top: -20%;
         left: 50%;
         transform: translateX(-50%);
         width: 92%; 
@@ -437,11 +440,18 @@ h1 {
         @include md {
             margin-top: 2rem;
         }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     
     
         img {
-            height: 6rem;
-            width: 6rem;
+            height: 4rem;
+            width: 4rem;
             object-fit: fill;
         }
     }
@@ -454,9 +464,17 @@ h1 {
         grid-template-columns: repeat(4, minmax(50px, 1fr));
         grid-template-rows: auto;
 
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
         img {
             height: 4rem;
             width: 4rem;
+            object-fit: fill;
         }
     }
 

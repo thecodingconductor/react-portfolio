@@ -12,7 +12,7 @@ const Projects = () => {
     const { orchesNation, marsRover, concertBuilder } = projectContext;
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
     }, [])
 
 

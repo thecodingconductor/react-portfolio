@@ -30,10 +30,10 @@ const ConcertBuilder = () => {
 
                             <div className="d-flex flex-column align-items-center justify-content-between button-container">
 
-                                <a href="http://www.concertbuilder.com">
+                                <a href="http://www.concertbuilder.com" target="_blank">
                                     <Button className="visit-site-button">Visit Site</Button>
                                 </a>
-                                <a href="https://github.com/thecodingconductor/concert-builder-rebuild">
+                                <a href="https://github.com/thecodingconductor/concert-builder-rebuild" target="_blank">
                                     <Button className="visit-code-button">Visit Code</Button>
                                 </a>
 

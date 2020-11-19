@@ -13,6 +13,7 @@ const MarsRover = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        // eslint-disable-next-line
     }, [])
 
     return (
@@ -28,10 +29,10 @@ const MarsRover = () => {
 
                             <div className="d-flex flex-column align-items-center justify-content-between button-container">
 
-                                <a href="http://www.marsroverphotos.com">
+                                <a href="http://www.marsroverphotos.com" target="_blank">
                                     <Button className="visit-site-button">Visit Site</Button>
                                 </a>
-                                <a href="https://github.com/thecodingconductor/mars_rover_webpack">
+                                <a href="https://github.com/thecodingconductor/mars_rover_webpack" target="_blank">
                                     <Button className="visit-code-button">Visit Code</Button>
                                 </a>
 
