@@ -97,6 +97,14 @@ h1 {
                 margin: 0;
                 padding: 0;
 
+                .hover-nav-container {
+                    .bootstrap-nav-drop-container {
+                        a  {
+                            display: none;
+                        }
+                    }
+                }
+
                 li {
                     a {
                         text-decoration: none;
@@ -123,12 +131,17 @@ h1 {
 
     .nav-bar-large {
         .links-right {
+
+
             .nav-link-list {
+
                 li {
                     a {
                         color: #fff;
                     }
-                }
+                }                
+
+                
             }
         }
     }

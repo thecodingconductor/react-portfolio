@@ -5,6 +5,7 @@ import { Navbar as ReactNavbar } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import NavContext from '../../context/nav/navContext';
 import NavModal from './NavModal';
+import NavHover from './NavHover';
 import { Container } from 'react-bootstrap';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
@@ -12,7 +13,7 @@ import useWindowDimensions from '../../hooks/useWindowDimensions';
 const Navbar = ({ title, icon }) => {
 
     const navContext = useContext(NavContext);
-    const { showModal, showModalFunc, hideModalFunc } = navContext;
+    const { showModal, showModalFunc, hideModalFunc, showDropDownFunc, hideDropDownFunc, showDropDown } = navContext;
     const { height, width } = useWindowDimensions();
     const { pathname } = useLocation();
 
@@ -38,8 +39,12 @@ const Navbar = ({ title, icon }) => {
                         </div>
                         <div className="links-right">
                             <ul className="d-flex align-items-center justify-content-between nav-link-list">
-                                <li>
+                                <li className="hover-nav-container" onMouseEnter={showDropDownFunc} onMouseLeave={hideDropDownFunc}>
                                     <a href="">Projects</a>
+                                    <NavHover active={showDropDown} />
+                                </li>
+                                <li>
+
                                 </li>
                                 <li>
                                     <Link to="/about">About</Link>
