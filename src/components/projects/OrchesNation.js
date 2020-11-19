@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from 'react';
+import React, { Fragment, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectContext from '../../context/projects/projectContext';
 import { Container, Button } from 'react-bootstrap';
@@ -10,6 +10,11 @@ const OrchesNation = () => {
 
     const projectContext = useContext(ProjectContext);
     const { orchesNation, marsRover, concertBuilder, openMarsRover } = projectContext;
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <Fragment>
             {orchesNation ?

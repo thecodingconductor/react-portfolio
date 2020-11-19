@@ -80,12 +80,27 @@ h1 {
         background-color: #fff;
     }
 
-    .nav-bar-large {
-        display: none;
+    .large-nav-container {
+        display: none !important;
 
         @include lg {
-            display: flex;
+            display: flex !important;
             width: 100%;
+        }
+
+        .nav-bar-large {
+            @include lg {
+                width: 100%;
+            }
+        }
+
+        .icon-left {
+            display: none;
+            
+            @include lg {
+                display: block;
+            }
+        
         }
 
         .links-right {
@@ -99,8 +114,10 @@ h1 {
 
                 .hover-nav-container {
                     .bootstrap-nav-drop-container {
-                        a  {
-                            display: none;
+                        .projects-drop-down-button {
+                            background: #fff;
+                            color: $blue-main;
+                            border: none;
                         }
                     }
                 }
@@ -134,6 +151,27 @@ h1 {
 
 
             .nav-link-list {
+
+
+                .hover-nav-container {
+                    .bootstrap-nav-drop-container {
+                        .projects-drop-down-button {
+                            background: $blue-main;
+                            color: #fff;
+                            border: none;
+                            outline: none;
+                        }
+
+                        .dropdown-menu {
+                            .dropdown-item {
+                                a {
+                                    color: $blue-main;
+                                }
+                               
+                            }
+                        }
+                    }
+                }
 
                 li {
                     a {
