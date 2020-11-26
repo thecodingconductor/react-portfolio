@@ -48,7 +48,7 @@ const About = () => {
                 <h1 className="whats-next-title">What's Next</h1>
                 <div className="image-container whats-next-container">
                     <figure>
-                        <img src={react} alt="" />
+                        <img src={react} alt="" class="react-icon" />
                         <figcaption>React</figcaption>
                     </figure>
                     <figure>
