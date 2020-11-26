@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Container } from 'react-bootstrap';
-import ProjectsShowcase from '../projects/ProjectsShowcase';
+
 import tristan from '../images/Tristan_Rais_Sherman_0036_web_DO_NOT_PRINT.jpg'
 import ConcertBuilderShowcase from '../projects/ConcertBuilderShowcase';
 import OrchesNationShowcase from '../projects/OrchesNationShowcase';
@@ -9,11 +9,7 @@ import MarsRoverShowcase from '../projects/MarsRoverShowcase';
 
 const Home = () => {
 
-    const projects = [
-        <ConcertBuilderShowcase />,
-        <OrchesNationShowcase />,
-        <MarsRoverShowcase />
-    ]
+
 
     return (
         <Container className="website-title-container">
@@ -25,14 +21,12 @@ const Home = () => {
             </div>
 
             <Container className="projects-showcase-container">
-                {/* <ProjectsShowcase />
-                
-                 */}
+
                 <ConcertBuilderShowcase />
                 <OrchesNationShowcase />
                 <MarsRoverShowcase />
 
-                {/* <ProjectsShowcase /> */}
+
             </Container>
         </Container>
     )
