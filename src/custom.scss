@@ -85,12 +85,14 @@ h1 {
 
         @include lg {
             display: flex !important;
-            width: 100%;
+            // max-width: none;
+            // width: 80%;
         }
 
         .nav-bar-large {
             @include lg {
                 width: 100%;
+                
             }
         }
 
@@ -144,45 +146,60 @@ h1 {
 .projects-page-nav {
     @include lg {
         background-color: $blue-main;
+        
     }
 
-    .nav-bar-large {
-        .links-right {
+    .large-nav-container {
+
+        @include lg {
+            display: flex !important;
+            max-width: none;
+            width: 80%;
+        }
+
+        .nav-bar-large {
 
 
-            .nav-link-list {
-
-
-                .hover-nav-container {
-                    .bootstrap-nav-drop-container {
-                        .projects-drop-down-button {
-                            background: $blue-main;
-                            color: #fff;
-                            border: none;
-                            outline: none;
-                        }
-
-                        .dropdown-menu {
-                            .dropdown-item {
-                                a {
-                                    color: $blue-main;
+            .links-right {
+    
+    
+                .nav-link-list {
+    
+    
+                    .hover-nav-container {
+                        .bootstrap-nav-drop-container {
+                            .projects-drop-down-button {
+                                background: $blue-main;
+                                color: #fff;
+                                border: none;
+                                outline: none;
+                            }
+    
+                            .dropdown-menu {
+                                .dropdown-item {
+                                    a {
+                                        color: $blue-main;
+                                    }
+                                   
                                 }
-                               
                             }
                         }
                     }
+    
+                    li {
+                        a {
+                            color: #fff;
+                        }
+                    }                
+    
+                    
                 }
-
-                li {
-                    a {
-                        color: #fff;
-                    }
-                }                
-
-                
             }
         }
+
     }
+
+    
 
     a {
         color: #fff;
@@ -321,13 +338,13 @@ h1 {
 }
 
 .visit-site-button, .visit-site-button:hover, .visit-site-button:active {
-    background-color: #CB8423;
+    background-color: #CB8423 !important;
 }
 
 
 
 .visit-code-button, .visit-code-button:hover, .visit-code-button:active {
-    background-color: #0B9D96;
+    background-color: #0B9D96 !important;
 }
 
 

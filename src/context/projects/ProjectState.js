@@ -11,7 +11,7 @@ import {
 const ProjectState = props => {
 
     const initialState = {
-        concertBuilder: false,
+        concertBuilder: true,
         orchesNation: false,
         marsRover: false
     };
