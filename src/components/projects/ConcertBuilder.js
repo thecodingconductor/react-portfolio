@@ -5,7 +5,7 @@ import { Container, Button } from 'react-bootstrap';
 import marsRoverHome from '../images/marsRoverHome.png';
 import marsRoverFavorites from '../images/marsRoverFavorites.png';
 import concertBuilderHome from '../images/concertbuilderhome.png';
-import concertBuilderPage from '../images/concertbuilderpage.png';
+import concertBuilderPage from '../images/concert-builder-new.png';
 import orchesNationHome from '../images/orchesNationHome.png';
 
 const ConcertBuilder = () => {
