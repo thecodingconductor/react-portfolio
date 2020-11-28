@@ -65,20 +65,12 @@ const About = () => {
             </div>
             <div className="about-me-text-container">
                 <h1>About Me</h1>
-                <p>My portfolio represents my learning in web development up to this point. I built these four websites using
-                pure Javascript, HTML, CSS, and Flask. I intentionally avoided using any front end frameworks and libraries.
-                I want to make sure that I had a thoroughly strong foundation in using Javascript, CSS and HTML without the
-            use of frameworks. </p>
-                <p>My next steps involve learning React, Node.js, Express, MongoDB, and more. Building these
-                projects shows that I have everything it takes to quickly pick up these new technologies, and incorporate
-            them into my existing projects, as well as creating new ones</p>
+                <p>I am self-taught web developer based in New York City, focused on front-end web technologies. I am experienced working mainly in the MERN stack (Mongoose, Express, React, NodeJS), as well as Python. I am passionate about creating innovative, dynamic, and modern solutions with other people, and being a force for cooperation, communication, and competence. In addition to my work as a web developer, I am a classically trained orchestral conductor, music producer, cellist, and guitarist.
+ </p>
+                <p>My portfolio features both front-end and full stack applications that I have built from scratch. All the projects feature the most current best practices in web development, with React Hooks, Sass, ES6, and Mobile-First design. The exception to this is Concert Builder, which was an exercise in building a large-scale application without the convenience of any front-end Javascript library or framework.
+</p>
                 <p>
-                    My background in music has given me a strong foundation in the importance of focus, practice, discipline, and
-                    time management. These qualities have served me well in my web development learning process, and will ensure
-                    that I excel in this field. As a musician, your work is never over. You are on a lifelong journey of
-                    discovery, learning, improvement. The same can be said about web development and computer science as a
-                    whole. I find the process of solving problems using code to be endlessly challenging and fascinating, and I
-                    am eager to continue my journey.
+                    My background in music has given me a strong foundation in the importance of practice, discipline, leadership, communication, and teamwork. These qualities make me a valuable addition to any project, and any team. I pride myself on the ability to find solutions and get the job done, no matter what it takes.  As a musician, your work is never over. You are on a lifelong journey of discovery, learning, and improvement. The same can be said about web development and computer science as a whole. I find the process of solving problems using code to be endlessly challenging and fascinating, and I am eager to continue my journey.
            </p>
                 <p>
                     In my spare time, I run a twice weekly classical music-focused Twitch stream at <a
