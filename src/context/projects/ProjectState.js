@@ -19,18 +19,21 @@ const ProjectState = props => {
     const [state, dispatch] = useReducer(projectReducer, initialState);
 
     const openConcertBuilder = () => {
+        window.scrollTo(0, 0)
         dispatch({
             type: CONCERT_BUILDER
         })
     }
 
     const openOrchesNation = () => {
+        window.scrollTo(0, 0)
         dispatch({
             type: ORCHES_NATION
         })
     }
 
     const openMarsRover = () => {
+        window.scrollTo(0, 0)
         dispatch({
             type: MARS_ROVER
         })
