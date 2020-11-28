@@ -46,7 +46,7 @@ const MarsRover = () => {
                             <img src={marsRoverHome} alt="Mars Rover Home" className="project-image-main" />
                             <div className="image-spacer"></div>
                             <h2 className="Key Feature">Key Features</h2>
-                            <p className="feature">Javascript</p>
+                            <p className="feature">React Hooks</p>
                             <p className="feature">CSS</p>
                             <p className="feature">HTML</p>
                             <img src={marsRoverFavorites} alt="Mars Rover Favorites" className="project-image-bottom" />
