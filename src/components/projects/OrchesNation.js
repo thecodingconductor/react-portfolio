@@ -4,7 +4,7 @@ import ProjectContext from '../../context/projects/projectContext';
 import { Container, Button } from 'react-bootstrap';
 import orchesNationHome from '../images/orchesNationHome.png';
 import orgContacts from '../images/orgContacts.png';
-import marsRoverHome from '../images/marsRoverHome.png';
+import marsRoverHome from '../images/mars-home.png';
 
 const OrchesNation = () => {
 
