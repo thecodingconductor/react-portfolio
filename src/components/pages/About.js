@@ -39,18 +39,15 @@ const About = () => {
                         <figcaption>Git</figcaption>
                     </figure>
                     <figure>
-                        <img src={sass} alt="" />
-                        <figcaption>Sass</figcaption>
+                        <img src={react} alt="" class="react-icon" />
+                        <figcaption>React</figcaption>
                     </figure>
                 </div>
             </div>
             <div className="about-page-middle-container">
                 <h1 className="whats-next-title">What's Next</h1>
                 <div className="image-container whats-next-container">
-                    <figure>
-                        <img src={react} alt="" class="react-icon" />
-                        <figcaption>React</figcaption>
-                    </figure>
+
                     <figure>
                         <img src={expressjs} alt="" />
                         <figcaption>ExpressJS</figcaption>
