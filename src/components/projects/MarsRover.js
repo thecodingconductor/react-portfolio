@@ -2,8 +2,8 @@ import React, { Fragment, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectContext from '../../context/projects/projectContext';
 import { Container, Button } from 'react-bootstrap';
-import marsRoverHome from '../images/marsRoverHome.png';
-import marsRoverFavorites from '../images/marsRoverFavorites.png';
+import marsRoverHome from '../images/mars-home.png';
+import marsRoverFavorites from '../images/mars-faves.png';
 import concertBuilderHome from '../images/concertbuilderhome.png';
 
 const MarsRover = () => {
@@ -32,7 +32,7 @@ const MarsRover = () => {
                                 <a href="http://www.marsroverphotos.com" target="_blank">
                                     <Button className="visit-site-button">Visit Site</Button>
                                 </a>
-                                <a href="https://github.com/thecodingconductor/mars_rover_webpack" target="_blank">
+                                <a href="https://github.com/thecodingconductor/react-mars-rover" target="_blank">
                                     <Button className="visit-code-button">Visit Code</Button>
                                 </a>
 

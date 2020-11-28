@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Link } from 'react-router-dom';
 import ProjectContext from '../../context/projects/projectContext';
-import marsRoverHome from '../images/marsRoverHome.png';
+import marsRoverHome from '../images/mars-home.png';
 import orchesNationHome from '../images/orchesNationHome.png';
 import concertBuilderHome from '../images/concertbuilderhome.png';
 
