@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <Container>
-                <h1 className="footer-header-text">Follow me on: </h1>
+                {/* <h1 className="footer-header-text">Follow me on: </h1> */}
                 <div className="copyright-info">
                     <p>@2020 Tristan Rais-Sherman</p>
                     <p>Website Design and illustration by Ellis Sant'Andrea</p>
