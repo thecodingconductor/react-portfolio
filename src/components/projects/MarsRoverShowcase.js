@@ -15,14 +15,18 @@ const MarsRoverShowcase = () => {
     const [isVisible, setVisible] = useState(false);
     const marsRoverRef = useRef();
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                setVisible(entry.isIntersecting)
-            });
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            setVisible(entry.isIntersecting)
         });
-        // console.log(domRef.current);
+    });
+
+    useEffect(() => {
+
+
         observer.observe(marsRoverRef.current);
+
+        return () => observer.disconnect();
         // eslint-disable-next-line
     }, []);
 

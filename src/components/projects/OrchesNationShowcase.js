@@ -15,17 +15,25 @@ const OrchesNationShowcase = () => {
     const [isVisible, setVisible] = useState(false);
     const orchesNationRef = useRef();
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                setVisible(entry.isIntersecting)
-            });
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            setVisible(entry.isIntersecting)
         });
-        // console.log(domRef.current);
+    });
+
+    useEffect(() => {
+
+
+
+
+
         if (orchesNationRef.current) {
             observer.observe(orchesNationRef.current);
         }
-        // observer.observe(domRef.current);
+
+        return () => observer.disconnect();
+
         // eslint-disable-next-line
     }, []);
 

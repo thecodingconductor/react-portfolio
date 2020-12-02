@@ -15,17 +15,19 @@ const ConcertBuilderShowcase = () => {
     const [isVisible, setVisible] = useState(false);
     const concertBuilderRef = useRef();
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                setVisible(entry.isIntersecting)
-            });
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            setVisible(entry.isIntersecting)
         });
-        // console.log(domRef.current);
+    });
+
+    useEffect(() => {
+
         if (concertBuilderRef.current) {
             observer.observe(concertBuilderRef.current);
-        }
+        };
 
+        return () => observer.disconnect();
         // eslint-disable-next-line
     }, []);
 

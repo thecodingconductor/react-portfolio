@@ -13,9 +13,13 @@ const ConcertBuilder = () => {
     const projectContext = useContext(ProjectContext);
     const { orchesNation, marsRover, concertBuilder, openOrchesNation } = projectContext;
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+    {
+        useEffect(() => {
+
+            window.scrollTo(0, 0);
+            // eslint-disable-next-line
+        }, []);
+    }
 
     return (
         <Fragment>
