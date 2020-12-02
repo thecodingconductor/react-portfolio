@@ -39,7 +39,7 @@ const About = () => {
                         <figcaption>Git</figcaption>
                     </figure>
                     <figure>
-                        <img src={react} alt="" class="react-icon" />
+                        <img src={react} alt="" className="react-icon" />
                         <figcaption>React</figcaption>
                     </figure>
                 </div>

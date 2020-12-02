@@ -26,8 +26,6 @@ const OrchesNationShowcase = () => {
 
 
 
-
-
         if (orchesNationRef.current) {
             observer.observe(orchesNationRef.current);
         }
