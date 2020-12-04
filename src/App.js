@@ -18,8 +18,6 @@ const App = () => {
           <div className="App">
             <Navbar />
             <div className="container main-application-container">
-              {/* <Spinner /> */}
-              {/* <h1>Portfolio</h1> */}
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/projects" component={Projects} />

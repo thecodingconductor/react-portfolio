@@ -1,15 +1,19 @@
-import React, { Fragment, useContext } from 'react';
+import React, { Fragment, useContext, useState } from 'react';
 import NavContext from '../../context/nav/navContext';
 import ProjectContext from '../../context/projects/projectContext';
 import { Link } from 'react-router-dom';
+import { Collapse } from 'react-bootstrap';
+import ReactCSSTransitionGroup from 'react-transition-group';
 
 
-const NavModal = () => {
+const NavModal = ({ open }) => {
 
     const navContext = useContext(NavContext);
     const projectContext = useContext(ProjectContext);
     const { openConcertBuilder, openOrchesNation, openMarsRover } = projectContext;
     const { showModalFunc, hideModalFunc, showModal } = navContext;
+
+
 
     const onClick = e => {
         hideModalFunc();
@@ -37,11 +41,13 @@ const NavModal = () => {
 
     return (
         <Fragment>
-            <div className="position-absolute nav-modal-container">
+
+            <div className="position-absolute nav-modal-container" >
                 <div className="d-flex flex-column align-items-center nav-modal-links-container">
                     {links}
                 </div>
             </div>
+
         </Fragment>
     )
 }

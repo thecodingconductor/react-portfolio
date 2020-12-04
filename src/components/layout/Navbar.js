@@ -1,12 +1,11 @@
 import React, { Fragment, useContext, useState } from 'react';
-import { useParams } from 'react-router';
 import { Link, useLocation } from 'react-router-dom';
 import { Navbar as ReactNavbar } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import NavContext from '../../context/nav/navContext';
 import NavModal from './NavModal';
 import NavHover from './NavHover';
-import { Container } from 'react-bootstrap';
+import { Container, Button, Collapse } from 'react-bootstrap';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 
@@ -18,9 +17,13 @@ const Navbar = ({ title, icon }) => {
     const { pathname } = useLocation();
 
 
-    // console.log(`height - ${height}, width - ${width}`);
+
 
     const onClick = () => {
+
+
+
+
         if (showModal === false) {
             showModalFunc();
         } else {
@@ -35,16 +38,17 @@ const Navbar = ({ title, icon }) => {
     return (
         <Fragment>
             <ReactNavbar className={`d-flex align-items-center justify-content-center navbar-main ${pathname === '/projects' && 'projects-page-nav'}`}>
-                <i className="fas fa-bars fa-2x mobile-menu-icon" onClick={onClick}></i>
+
+
+                <i className="fas fa-bars fa-2x mobile-menu-icon" onClick={onClick} ></i>
                 <Container className="large-nav-container">
-                    <div className={`d-flex justify-content-between align-items-center nav-bar-large `}>
+                    <div className={`d-flex justify-content-between align-items-center nav-bar-large`}>
                         <div className="icon-left" onClick={openHome}>
-                            {/* <Link to="/"></Link> */}
+
                         </div>
                         <div className="links-right">
                             <ul className="d-flex align-items-center justify-content-between nav-link-list">
                                 <li className="hover-nav-container" onMouseEnter={showDropDownFunc} onMouseLeave={hideDropDownFunc}>
-                                    {/* <a href="">Projects</a> */}
                                     <NavHover />
                                 </li>
                                 <li>
@@ -61,7 +65,10 @@ const Navbar = ({ title, icon }) => {
 
 
             </ReactNavbar>
-            { showModal === true && <NavModal />}
+            { showModal === true &&
+                <NavModal />
+            }
+
         </Fragment>
 
     )
