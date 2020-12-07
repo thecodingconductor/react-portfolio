@@ -44,7 +44,7 @@ const Navbar = ({ title, icon }) => {
                 <Container className="large-nav-container">
                     <div className={`d-flex justify-content-between align-items-center nav-bar-large`}>
                         <div className="icon-left" onClick={openHome}>
-
+                            <p>T</p>
                         </div>
                         <div className="links-right">
                             <ul className="d-flex align-items-center justify-content-between nav-link-list">

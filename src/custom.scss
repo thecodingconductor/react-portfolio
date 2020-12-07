@@ -108,6 +108,7 @@ h1 {
             
             @include lg {
                 display: block;
+
             }
         
         }
@@ -141,11 +142,25 @@ h1 {
         }
 
         .icon-left {
+            background-color: $blue-main;
             border-radius: 50%;
             border: 2px solid #DDDDDD;
             height: 37px;
             width: 37px;
             cursor: pointer;
+            position: relative;
+
+            p {
+                font-weight: 800;
+                color: #fff;
+                position: absolute;
+                margin: auto;
+                top: 16%;
+                left: 0;
+                right: 0;
+                bottom: 0
+                
+            }
         }
     }
 }
