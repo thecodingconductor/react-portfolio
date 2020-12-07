@@ -180,6 +180,12 @@ h1 {
 
         .nav-bar-large {
 
+            .icon-left {
+                @include lg {
+                    border: 2px solid #fff;
+                }
+            }
+
 
             .links-right {
     
