@@ -9,7 +9,7 @@ import concertBuilderHome from '../images/concertbuilderhome.png';
 const MarsRover = () => {
 
     const projectContext = useContext(ProjectContext);
-    const { orchesNation, marsRover, concertBuilder, openConcertBuilder } = projectContext;
+    const { marsRover, openConcertBuilder } = projectContext;
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -24,7 +24,8 @@ const MarsRover = () => {
                         <div className="inner">
                             <div className="text-container">
                                 <h1>Mars Rover</h1>
-                                <p>Front-end web application for viewing photos from the Mars Rovers</p>
+                                <p>Front-end web application built with React and interacting with 3rd party NASA API's.</p>
+                                <p>User can view randomly generated photos from the Mars Rovers and save favorites.</p>
                             </div>
 
                             <div className="d-flex flex-column align-items-center justify-content-between button-container">
@@ -43,13 +44,13 @@ const MarsRover = () => {
                     </Container>
                     <Container className="project-middle-container" fluid>
                         <div className="inner-middle">
-                            <img src={marsRoverHome} alt="Mars Rover Home" className="project-image-main" />
+                            <img src={marsRoverHome} alt="Mars Rover Home" className="project-image-main marsrover-image-main" />
                             <div className="image-spacer"></div>
                             <h2 className="Key Feature">Key Features</h2>
                             <p className="feature">React Hooks</p>
                             <p className="feature">Sass</p>
                             <p className="feature">HTML</p>
-                            <img src={marsRoverFavorites} alt="Mars Rover Favorites" className="project-image-bottom" />
+                            <img src={marsRoverFavorites} alt="Mars Rover Favorites" className="project-image-bottom marsrover-image-bottom" />
                         </div>
                     </Container>
 

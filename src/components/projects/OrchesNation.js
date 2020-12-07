@@ -9,7 +9,7 @@ import marsRoverHome from '../images/mars-home.png';
 const OrchesNation = () => {
 
     const projectContext = useContext(ProjectContext);
-    const { orchesNation, marsRover, concertBuilder, openMarsRover } = projectContext;
+    const { orchesNation, openMarsRover } = projectContext;
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -23,7 +23,8 @@ const OrchesNation = () => {
                         <div className="inner">
                             <div className="text-container">
                                 <h1>OrchesNation</h1>
-                                <p>Full MERN Stack Application CRM for the Orchestra Industry</p>
+                                <p>Full Stack Application built with React, Node.js, Express, MongoDB, and REST API's.</p>
+                                <p>Built to assist orchestral professionals organize their contact lists, and view organizations' personnel.</p>
                             </div>
                             <div className="d-flex flex-column align-items-center justify-content-between button-container">
 
@@ -41,13 +42,13 @@ const OrchesNation = () => {
                     </Container>
                     <Container className="project-middle-container" fluid>
                         <div className="inner-middle">
-                            <img src={orchesNationHome} alt="Mars Rover Home" className="project-image-main" />
-                            <div className="image-spacer"></div>
+                            <img src={orchesNationHome} alt="Mars Rover Home" className="project-image-main orchesnation-image-main" />
+                            <div className="image-spacer orchesnation-spacer"></div>
                             <h2 className="Key Feature">Key Features</h2>
                             <p className="feature">React Hooks</p>
                             <p className="feature">ExpressJS, MongoDB</p>
                             <p className="feature">REST API's</p>
-                            <img src={orgContacts} alt="Mars Rover Favorites" className="project-image-bottom" />
+                            <img src={orgContacts} alt="Mars Rover Favorites" className="project-image-bottom orchesnation-image-bottom" />
                         </div>
 
 
