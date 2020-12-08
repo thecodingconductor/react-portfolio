@@ -65,7 +65,7 @@ const About = () => {
             </div>
             <div className="about-me-text-container">
                 <h1>About Me</h1>
-                <p>I am self-taught web developer based in New York City, focusing on front-end web technologies. I am experienced working mainly in the MERN stack (Mongoose, Express, React, NodeJS), as well as Python. I am passionate about creating innovative, dynamic, and modern solutions, and am commited to the values of cooperation, communication, and competence. In addition to my work as a web developer, I am a classically trained orchestral conductor, music producer, cellist, and guitarist.
+                <p>I am self-taught web developer based in New York City, focusing on front-end web technologies. I am experienced working mainly in the MERN stack (MongoDB, Express.js, React.js, Node.js), as well as Python. I am passionate about creating innovative, dynamic, and modern solutions, and am commited to the values of cooperation, communication, and competence. In addition to my work as a web developer, I am a classically trained orchestral conductor, music producer, cellist, and guitarist.
  </p>
                 <p>My portfolio features both front-end and full stack applications that I have built from scratch. All the projects feature the most current best practices in web development, with React Hooks, Sass, ES6, and Mobile-First design. The exception to this is Concert Builder, which was an exercise in building a large-scale application without the convenience of any front-end Javascript library or framework.
 </p>
