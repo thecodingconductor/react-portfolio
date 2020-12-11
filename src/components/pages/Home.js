@@ -16,7 +16,7 @@ const Home = () => {
         <Container className="website-title-container">
             <div className="d-flex align-items-center justify-content-center top-container">
                 <h1 className="website-title">
-                    Tristan is a front-end developer and musician.
+                    Tristan is a front-end developer.
                 </h1>
                 {/* <img src={tristan} alt="Tristan Headshot" className="tristan-headshot" /> */}
             </div>
