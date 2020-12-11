@@ -23,8 +23,8 @@ const OrchesNation = () => {
                         <div className="inner">
                             <div className="text-container">
                                 <h1>OrchesNation</h1>
+                                <p>Web application to assist orchestral professionals organize their contact lists, and view organizations' personnel.</p>
                                 <p>Full Stack Application built with React, Node.js, Express, MongoDB, and REST API's.</p>
-                                <p>Built to assist orchestral professionals organize their contact lists, and view organizations' personnel.</p>
                             </div>
                             <div className="d-flex flex-column align-items-center justify-content-between button-container">
 
