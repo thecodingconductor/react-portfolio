@@ -28,7 +28,7 @@ const OrchesNation = () => {
                             </div>
                             <div className="d-flex flex-column align-items-center justify-content-between button-container">
 
-                                <a href="http://www.orchesnation.com/" target="_blank">
+                                <a href="https://www.orchesnation.com/login" target="_blank">
                                     <Button className="visit-site-button">Visit Site</Button>
                                 </a>
                                 <a href="https://github.com/thecodingconductor/peopleBook" target="_blank">
