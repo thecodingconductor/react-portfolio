@@ -37,6 +37,7 @@ const ConcertBuilderShowcase = () => {
             <Link to="/projects">
                 <Container className={`project-container fade-in-section ${isVisible ? 'is-visible' : ''}`} onClick={() => openConcertBuilder()} ref={concertBuilderRef}>
                     <h1 className="project-showcase-title">Concert Builder</h1>
+                    <h1 className="project-showcase-title project-showcase-description">Full-stack application designed to assist orchestra conductors to research, develop, and plan concerts.</h1>
                     <img src={concertBuilderHome} alt="Mars Rover Home" className="mars-rover-photo" />
                 </Container>
             </Link>

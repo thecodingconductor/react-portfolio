@@ -36,6 +36,7 @@ const MarsRoverShowcase = () => {
             <Link to='/projects'>
                 <Container className={`project-container fade-in-section ${isVisible ? 'is-visible' : ''}`} onClick={() => openMarsRover()} ref={marsRoverRef}>
                     <h1 className="project-showcase-title">Mars Rover</h1>
+                    <h1 className="project-showcase-title project-showcase-description">User can view randomly generated photos from the Mars Rovers and save favorites.</h1>
                     <img src={marsRoverHome} alt="Mars Rover Home" className="mars-rover-photo" />
                 </Container>
             </Link>
