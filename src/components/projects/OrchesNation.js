@@ -23,15 +23,15 @@ const OrchesNation = () => {
                         <div className="inner">
                             <div className="text-container">
                                 <h1>OrchesNation</h1>
-                                <p>Web application to assist orchestral professionals organize their contact lists, and view organizations' personnel.</p>
+                                <p className="orchesnation-subtitle-small">Web application to assist orchestral professionals organize their contact lists, and view organizations' personnel.</p>
                                 <p>Full Stack Application built with React, Node.js, Express, MongoDB, and REST API's.</p>
                             </div>
                             <div className="d-flex flex-column align-items-center justify-content-between button-container">
 
-                                <a href="https://www.orchesnation.com/login" target="_blank">
+                                <a href="https://www.orchesnation.com/login" target="_blank" rel="noreferrer">
                                     <Button className="visit-site-button">Visit Site</Button>
                                 </a>
-                                <a href="https://github.com/thecodingconductor/peopleBook" target="_blank">
+                                <a href="https://github.com/thecodingconductor/peopleBook" target="_blank" rel="noreferrer">
                                     <Button className="visit-code-button">Visit Code</Button>
                                 </a>
 
