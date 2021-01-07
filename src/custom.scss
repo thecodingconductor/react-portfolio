@@ -92,8 +92,7 @@ h1 {
 
         @include lg {
             display: flex !important;
-            // max-width: none;
-            // width: 80%;
+           
         }
 
         .nav-bar-large {
@@ -245,7 +244,7 @@ h1 {
     left: 0;
     right: 0;
     z-index: 999;
-    background-color: #0B9D96;
+    background-color: $blue-main;
 
     .nav-modal-links-container {
       
@@ -318,7 +317,7 @@ h1 {
     .project-showcase-description {
         color: $blue-main;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: .9rem;
     }
 
     img {

@@ -1,14 +1,12 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 
 const Footer = () => {
     return (
-        <footer className="footer">
-            <Container>
-                {/* <h1 className="footer-header-text">Follow me on: </h1> */}
+        <footer className="footer d-flex flex-column align-items-center justify-content-center">
+            <Container className="">
                 <div className="copyright-info">
                     <p>@2020 Tristan Rais-Sherman</p>
-
                 </div>
             </Container>
         </footer>

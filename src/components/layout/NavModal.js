@@ -1,9 +1,7 @@
-import React, { Fragment, useContext, useState } from 'react';
+import React, { Fragment, useContext } from 'react';
 import NavContext from '../../context/nav/navContext';
 import ProjectContext from '../../context/projects/projectContext';
 import { Link } from 'react-router-dom';
-import { Collapse } from 'react-bootstrap';
-import ReactCSSTransitionGroup from 'react-transition-group';
 
 
 const NavModal = ({ open }) => {

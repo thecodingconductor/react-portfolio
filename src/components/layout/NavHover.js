@@ -1,5 +1,5 @@
-import React, { Fragment, useContext } from 'react';
-import { Container, Dropdown } from 'react-bootstrap';
+import React, { useContext } from 'react';
+import Dropdown from 'react-bootstrap/Dropdown';
 import { Link } from 'react-router-dom';
 import NavContext from '../../context/nav/navContext';
 import ProjectContext from '../../context/projects/projectContext';
