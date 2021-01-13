@@ -28,12 +28,12 @@ const NavState = props => {
 
 
     const showDropDownFunc = () => {
-        console.log('show')
+     
         dispatch({ type: SHOW_DROPDOWN });
     }
 
     const hideDropDownFunc = () => {
-        console.log("hide");
+       
         dispatch({ type: HIDE_DROPDOWN });
     }
 

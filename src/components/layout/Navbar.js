@@ -1,28 +1,25 @@
-import React, { Fragment, useContext, useState } from 'react';
+import React, { Fragment, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Navbar as ReactNavbar } from 'react-bootstrap';
-import PropTypes from 'prop-types';
+
 import NavContext from '../../context/nav/navContext';
 import NavModal from './NavModal';
 import NavHover from './NavHover';
-import { Container, Button, Collapse } from 'react-bootstrap';
-import useWindowDimensions from '../../hooks/useWindowDimensions';
+import { Container } from 'react-bootstrap';
+
 
 
 const Navbar = ({ title, icon }) => {
 
     const navContext = useContext(NavContext);
-    const { showModal, showModalFunc, hideModalFunc, showDropDownFunc, hideDropDownFunc, showDropDown } = navContext;
-    const { height, width } = useWindowDimensions();
+    const { showModal, showModalFunc, hideModalFunc, showDropDownFunc, hideDropDownFunc } = navContext;
+    // const { height, width } = useWindowDimensions();
     const { pathname } = useLocation();
 
 
 
 
     const onClick = () => {
-
-
-
 
         if (showModal === false) {
             showModalFunc();
@@ -52,10 +49,10 @@ const Navbar = ({ title, icon }) => {
                                     <NavHover />
                                 </li>
                                 <li>
-
+                                    <Link to="/about">About</Link>
                                 </li>
                                 <li>
-                                    <Link to="/about">About</Link>
+                                    <a href="mailto: tristan.raissherman@gmail.com">Contact</a>
                                 </li>
                             </ul>
                         </div>

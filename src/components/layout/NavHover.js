@@ -23,14 +23,14 @@ const NavHover = () => {
                 Projects
             </Dropdown.Toggle>
             <Dropdown.Menu>
-                <Dropdown.Item>
-                    <Link to="/projects" onClick={openConcertBuilder}>Concert Builder</Link>
+                <Dropdown.Item href="/projects" onClick={openConcertBuilder}>
+                    Concert Builder
                 </Dropdown.Item>
-                <Dropdown.Item>
-                    <Link to="/projects" onClick={openOrchesNation}>OrchesNation</Link>
+                <Dropdown.Item href="/projects" onClick={openOrchesNation}>
+                    OrchesNation
                 </Dropdown.Item>
-                <Dropdown.Item>
-                    <Link to="/projects" onClick={openMarsRover}>Mars Rover</Link>
+                <Dropdown.Item href="/projects" onClick={openMarsRover}>
+                    Mars Rover 
                 </Dropdown.Item>
 
             </Dropdown.Menu>
