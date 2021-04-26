@@ -13,26 +13,26 @@ const NavModal = ({ open }) => {
 
 
 
-    const onClick = e => {
-        hideModalFunc();
-        if (e.target.textContent === 'Concert Builder') {
-            openConcertBuilder();
-        } else if (e.target.textContent === 'OrchesNation') {
-            openOrchesNation();
-        } else if (e.target.textContent === 'Mars Rover') {
-            openMarsRover();
-        }
+    // const onClick = e => {
+    //     hideModalFunc();
+    //     if (e.target.textContent === 'Concert Builder') {
+    //         openConcertBuilder();
+    //     } else if (e.target.textContent === 'OrchesNation') {
+    //         openOrchesNation();
+    //     } else if (e.target.textContent === 'Mars Rover') {
+    //         openMarsRover();
+    //     }
 
-    }
+    // }
 
 
     const links = (
         <Fragment>
-            <Link to='/' onClick={onClick}> Home</Link>
-            <Link to="/projects" onClick={onClick}>Concert Builder</Link>
-            <Link to="/projects" onClick={onClick}>OrchesNation</Link>
-            <Link to="/projects" onClick={onClick}>Mars Rover</Link>
-            <Link to="/about" onClick={onClick}>About</Link>
+            <Link to='/' > Home</Link>
+            <Link to="/projects/concertbuilder" >Concert Builder</Link>
+            <Link to="/projects/orchesnation" >OrchesNation</Link>
+            <Link to="/projects/marsrover" >Mars Rover</Link>
+            <Link to="/about">About</Link>
         </Fragment>
     )
 

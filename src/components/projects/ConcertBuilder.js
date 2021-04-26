@@ -5,27 +5,35 @@ import { Container, Button } from 'react-bootstrap';
 import concertBuilderHome from '../images/concertbuilderhome.png';
 import concertBuilderPage from '../images/concert-builder-new.png';
 import orchesNationHome from '../images/orchesNationHome.png';
+import NavContext from '../../context/nav/navContext'
+
+
 
 const ConcertBuilder = () => {
 
     const projectContext = useContext(ProjectContext);
     const { concertBuilder, openOrchesNation } = projectContext;
+    
+    const navContext = useContext(NavContext);
+    const {hideModalFunc} = navContext
 
-    {
-        useEffect(() => {
+    
+    useEffect(() => {
 
-            window.scrollTo(0, 0);
-            // eslint-disable-next-line
-        }, []);
-    }
+        window.scrollTo(0, 0);
 
-    const linkHandler = () => {
-        window.location.href = '/projects/orchesnation'
-    }
+        hideModalFunc();
+        // eslint-disable-next-line
+    }, []);
+    
+
+    // const linkHandler = () => {
+    //     window.location.href = '/projects/orchesnation'
+    // }
 
     return (
-        <Fragment>
-            {concertBuilder ?
+        
+           
                 <Fragment>
                     <Container className="project-top-container" fluid>
                         <div className="inner">
@@ -79,8 +87,8 @@ const ConcertBuilder = () => {
 
 
 
-                : ''}
-        </Fragment>
+               
+      
     )
 }
 

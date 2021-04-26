@@ -5,19 +5,25 @@ import { Container, Button } from 'react-bootstrap';
 import orchesNationHome from '../images/orchesNationHome.png';
 import orgContacts from '../images/orgContacts.png';
 import marsRoverHome from '../images/mars-home.png';
+import NavContext from '../../context/nav/navContext'
 
 const OrchesNation = () => {
 
     const projectContext = useContext(ProjectContext);
     const { orchesNation, openMarsRover } = projectContext;
 
+    const navContext = useContext(NavContext);
+    const {hideModalFunc} = navContext
+
+
     useEffect(() => {
         window.scrollTo(0, 0)
+        hideModalFunc();
+        // eslint-disable-next-line
     }, [])
 
     return (
-        <Fragment>
-            {orchesNation ?
+       
                 <Fragment>
                     <Container className="project-top-container" fluid>
                         <div className="inner">
@@ -73,8 +79,6 @@ const OrchesNation = () => {
 
 
 
-                : ''}
-        </Fragment>
     )
 }
 

@@ -154,11 +154,13 @@ h1 {
         font-weight: 800;
         color: #fff;
         position: absolute;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         top: 16%;
         left: 0;
         right: 0;
         bottom: 0;
+        text-align: center
       }
     }
   }
@@ -261,6 +263,7 @@ h1 {
       font-size: 1.8rem;
       font-weight: 600;
       width: 95%;
+      text-align: center;
     }
 
     @include lg {

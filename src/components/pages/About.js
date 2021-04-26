@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import css from '../images/css.svg';
 import expressjs from '../images/expressjs.svg';
@@ -10,8 +10,18 @@ import gitIcon from '../images/Git_icon.svg.png';
 import python from '../images/python.svg';
 import sass from '../images/sass-1.svg';
 import react from '../images/reactIcon.png';
+import NavContext from '../../context/nav/navContext'
 
 const About = () => {
+
+    const navContext = useContext(NavContext);
+    const {hideModalFunc} = navContext
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+        hideModalFunc();
+        // eslint-disable-next-line
+    }, [])
 
     return (
         <Container>

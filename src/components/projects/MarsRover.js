@@ -5,14 +5,19 @@ import { Container, Button } from 'react-bootstrap';
 import marsRoverHome from '../images/mars-home.png';
 import marsRoverFavorites from '../images/mars-faves.png';
 import concertBuilderHome from '../images/concertbuilderhome.png';
+import NavContext from '../../context/nav/navContext'
 
 const MarsRover = () => {
 
     const projectContext = useContext(ProjectContext);
     const { marsRover, openConcertBuilder } = projectContext;
 
+    const navContext = useContext(NavContext);
+    const {hideModalFunc} = navContext
+
     useEffect(() => {
         window.scrollTo(0, 0)
+        hideModalFunc();
         // eslint-disable-next-line
     }, [])
 
@@ -21,8 +26,7 @@ const MarsRover = () => {
     }
 
     return (
-        <Fragment>
-            {marsRover ?
+       
                 <Fragment>
                     <Container className="project-top-container" fluid>
                         <div className="inner">
@@ -76,8 +80,7 @@ const MarsRover = () => {
 
 
 
-                : ''}
-        </Fragment>
+        
     )
 }
 
