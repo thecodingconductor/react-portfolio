@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer d-flex flex-column align-items-center justify-content-center">
             <Container className="">
                 <div className="copyright-info">
-                    <p>@2020 Tristan Rais-Sherman</p>
+                    <p className="copyright-info-text">@2020 Tristan Rais-Sherman</p>
                 </div>
             </Container>
         </footer>
