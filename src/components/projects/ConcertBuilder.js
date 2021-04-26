@@ -19,6 +19,10 @@ const ConcertBuilder = () => {
         }, []);
     }
 
+    const linkHandler = () => {
+        window.location.href = '/projects/orchesnation'
+    }
+
     return (
         <Fragment>
             {concertBuilder ?
@@ -62,10 +66,10 @@ const ConcertBuilder = () => {
                         <div className="inner-bottom">
                             <h2>Next Project</h2>
                             <h4>OrchesNation</h4>
-                            <Link to="/projects">
-                                <Container className="project-container" onClick={() => openOrchesNation()}>
+                            <Link to="/projects/orchesnation">
+                                <Container className="project-container">
 
-                                    <img src={orchesNationHome} alt="Mars Rover Home" className="mars-rover-photo" />
+                                    <img src={orchesNationHome} alt="OrchesNation" className="mars-rover-photo" />
                                 </Container>
                             </Link>
                         </div>

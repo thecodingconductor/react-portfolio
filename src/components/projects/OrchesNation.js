@@ -58,8 +58,8 @@ const OrchesNation = () => {
                         <div className="inner-bottom">
                             <h2>Next Project</h2>
                             <h4>Mars Rover</h4>
-                            <Link to='/projects'>
-                                <Container className="project-container" onClick={() => openMarsRover()}>
+                            <Link to='/projects/marsrover'>
+                                <Container className="project-container">
 
                                     <img src={marsRoverHome} alt="Mars Rover Home" className="mars-rover-photo" />
                                 </Container>

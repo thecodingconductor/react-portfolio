@@ -17,7 +17,7 @@ const Navbar = ({ title, icon }) => {
     const { pathname } = useLocation();
 
 
-
+    const newPath = pathname.split('/')[1];
 
     const onClick = () => {
 
@@ -32,9 +32,11 @@ const Navbar = ({ title, icon }) => {
         window.location = '/';
     }
 
+    console.log(pathname)
+
     return (
         <Fragment>
-            <ReactNavbar className={`d-flex align-items-center justify-content-center navbar-main ${pathname === '/projects' && 'projects-page-nav'}`}>
+            <ReactNavbar className={`d-flex align-items-center justify-content-center navbar-main ${newPath === 'projects' && 'projects-page-nav'}`}>
 
 
                 <i className="fas fa-bars fa-2x mobile-menu-icon" onClick={onClick} ></i>

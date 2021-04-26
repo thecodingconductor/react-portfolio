@@ -16,6 +16,10 @@ const MarsRover = () => {
         // eslint-disable-next-line
     }, [])
 
+    const linkHandler = () => {
+        window.location.href = '/projects/concertbuilder'
+    }
+
     return (
         <Fragment>
             {marsRover ?
@@ -59,10 +63,10 @@ const MarsRover = () => {
                         <div className="inner-bottom">
                             <h2>Next Project</h2>
                             <h4>Concert Builder</h4>
-                            <Link to="/projects">
-                                <Container className="project-container" onClick={() => openConcertBuilder()}>
+                            <Link to="/projects/concertbuilder">
+                                <Container className="project-container">
 
-                                    <img src={concertBuilderHome} alt="Mars Rover Home" className="mars-rover-photo" />
+                                    <img src={concertBuilderHome} alt="Concert Builder" className="mars-rover-photo" />
                                 </Container>
                             </Link>
                         </div>

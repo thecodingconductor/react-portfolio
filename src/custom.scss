@@ -65,6 +65,11 @@ h1 {
 
 //Navbar
 
+.btn:focus {
+  box-shadow: none;
+  outline: none !important
+}
+
 .navbar-main {
   background-color: $blue-main;
   height: 4rem;
@@ -117,6 +122,13 @@ h1 {
               background: #fff;
               color: $blue-main;
               border: none;
+              outline: none !important;
+            }
+
+            .projects-drop-down-menu {
+              a {
+                color: $blue-main
+              }
             }
           }
         }

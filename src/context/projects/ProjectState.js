@@ -12,8 +12,8 @@ const ProjectState = props => {
 
     const initialState = {
         concertBuilder: true,
-        orchesNation: false,
-        marsRover: false
+        orchesNation: true,
+        marsRover: true
     };
 
     const [state, dispatch] = useReducer(projectReducer, initialState);

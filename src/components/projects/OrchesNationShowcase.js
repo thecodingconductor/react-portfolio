@@ -38,11 +38,11 @@ const OrchesNationShowcase = () => {
 
     return (
         <Fragment>
-            <Link to="/projects">
+            <Link to="/projects/orchesnation">
                 <Container className={`project-container fade-in-section ${isVisible ? 'is-visible' : ''}`} onClick={() => openOrchesNation()} ref={orchesNationRef}>
                     <h1 className="project-showcase-title">OrchesNation</h1>
                     <h1 className="project-showcase-title project-showcase-description">Web application to assist orchestral professionals organize their contact lists, and view organizations' personnel.</h1>
-                    <img src={orchesNationHome} alt="Mars Rover Home" className="mars-rover-photo" />
+                    <img src={orchesNationHome} alt="OrchesNation" className="mars-rover-photo" />
                 </Container>
             </Link>
 
