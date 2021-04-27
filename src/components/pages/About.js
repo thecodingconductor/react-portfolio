@@ -36,7 +36,7 @@ const About = () => {
            </p>
                 <p>
                     In my spare time, I run a twice weekly classical music-focused Twitch stream at <a
-                        href="https://twitch.tv/orchestra_obsessed">twitch.tv/orchestra_obsessed</a>, write and record music,
+                        href="https://twitch.tv/orchestraobsessed">twitch.tv/orchestraobsessed</a>, write and record music,
             read, study scores, play video games, and spend time with friends and family.
            </p>
 
