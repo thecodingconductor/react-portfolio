@@ -1,29 +1,17 @@
 import React, { Fragment, useContext } from 'react';
 import NavContext from '../../context/nav/navContext';
 import ProjectContext from '../../context/projects/projectContext';
+import {CSSTransition, Transition} from 'react-transition-group'
 import { Link } from 'react-router-dom';
 
 
-const NavModal = ({ open }) => {
+const NavModal = ({ transitionState }) => {
 
     const navContext = useContext(NavContext);
     const projectContext = useContext(ProjectContext);
     const { openConcertBuilder, openOrchesNation, openMarsRover } = projectContext;
     const { showModalFunc, hideModalFunc, showModal } = navContext;
 
-
-
-    // const onClick = e => {
-    //     hideModalFunc();
-    //     if (e.target.textContent === 'Concert Builder') {
-    //         openConcertBuilder();
-    //     } else if (e.target.textContent === 'OrchesNation') {
-    //         openOrchesNation();
-    //     } else if (e.target.textContent === 'Mars Rover') {
-    //         openMarsRover();
-    //     }
-
-    // }
 
 
     const links = (
@@ -38,15 +26,15 @@ const NavModal = ({ open }) => {
 
 
     return (
-        <Fragment>
-
-            <div className="position-absolute nav-modal-container" >
-                <div className="d-flex flex-column align-items-center nav-modal-links-container">
-                    {links}
+        
+            // <CSSTransition in={showModal} timeout={300} classNames="sample">
+                <div className={`position-absolute nav-modal-container sample-${transitionState}`} >
+                    <div className="d-flex flex-column align-items-center nav-modal-links-container">
+                        {links}
+                    </div>
                 </div>
-            </div>
-
-        </Fragment>
+            // </CSSTransition>
+        
     )
 }
 
