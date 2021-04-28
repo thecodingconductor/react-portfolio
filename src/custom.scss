@@ -73,6 +73,8 @@ h1 {
 .navbar-main {
   background-color: $blue-main;
   height: 4rem;
+  position: relative;
+  z-index: 2;
 
   @include lg {
     background-color: #fff;
@@ -233,7 +235,7 @@ h1 {
   left: 0;
   right: 0;
   top: -100vh;
-  z-index: -5;
+  z-index: 0;
   background-color: $blue-main;
   transition: top 0.4s ease-in-out, opacity 0.4s ease-in-out;
 
